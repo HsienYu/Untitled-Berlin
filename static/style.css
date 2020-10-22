@@ -1,0 +1,242 @@
+* {
+  margin: 0;
+}
+
+body {
+  margin: 0;
+  background: black;
+}
+
+#chatdiv_a {
+  width: 100%;
+  height: 50%;
+  overflow: scroll;
+  position: fixed;
+  top: 50%;
+  left: 0%;
+  background-color: black;
+  color: white;
+}
+
+#chatdiv_b {
+  width: 25%;
+  height: 50%;
+  overflow: scroll;
+  position: fixed;
+  top: 0px;
+  left: 0%;
+  background-color: black;
+  color: white;
+}
+
+#chatdiv_c {
+  width: 25%;
+  height: 50%;
+  overflow: scroll;
+  position: fixed;
+  top: 0px;
+  left: 25%;
+  background-color: black;
+  color: white;
+}
+
+#chatdiv_d {
+  width: 25%;
+  height: 50%;
+  overflow: scroll;
+  position: fixed;
+  top: 0px;
+  left: 50%;
+  background-color: black;
+  color: white;
+}
+
+#chatdiv_e {
+  width: 25%;
+  height: 50%;
+  overflow: scroll;
+  position: fixed;
+  top: 0px;
+  left: 75%;
+  background-color: black;
+  color: white;
+}
+
+#container {
+  width: 100%;
+  display: block;
+  margin-top: 10em;
+  position: absolute;
+}
+
+#container p {
+  color: white;
+  text-align: center;
+  font-size: 12px;
+}
+
+h1 {
+  text-align: center;
+  font-size: 40px;
+  font-weight: 100;
+  color: rgb(220, 0, 134);
+  text-shadow: 10px 10px 10px rgb(36, 0, 252);
+  transform: rotate(-10deg);
+  margin-left: 0.5em;
+}
+
+#buttons {
+  width: 100%;
+  height: 100%;
+  /*background: url(/static/bg.png);
+    /* display: block; */
+  /* margin: 0 auto; */
+  position: fixed;
+  background-size: 80%;
+  top: 0;
+  left: 0;
+}
+
+#button {
+  display: inline-block;
+  padding: 0.5em 1em;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  color: white;
+  font-size: 15px;
+  font-weight: 400;
+  text-align: center;
+  line-height: 4rem;
+}
+
+#button:hover {
+  cursor: pointer;
+}
+
+/*
+  @-webkit-keyframes fadeIt {
+    0%   { background-color: none; }
+    50%  { background-color: lightgrey; }
+    100% { background-color: none; }
+  }
+  @-moz-keyframes fadeIt {
+    0%   { background-color: none; }
+    50%  { background-color: lightgrey; }
+    100% { background-color: none; }
+  }
+  @-o-keyframes fadeIt {
+    0%   { background-color: none; }
+    50%  { background-color: lightgrey; }
+    100% { background-color: none; }
+  }
+  @keyframes fadeIt {
+    0%   { background-color: none; }
+    50%  { background-color: lightgrey; }
+    100% { background-color: none; }
+  }
+  
+  #button{
+      -webkit-animation: fadeIt 4s ease-in-out;
+         -moz-animation: fadeIt 4s ease-in-out;
+           -o-animation: fadeIt 4s ease-in-out;
+              animation: fadeIt 4s ease-in-out;
+              animation-iteration-count: infinite;
+  }
+*/
+
+#cell-container {
+  background-color: white;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  top: 0px;
+  left: 0px;
+  position: fixed;
+  background-image: url("/static/bp1.png");
+  background-repeat: no-repeat;
+  background-size: 400px 400px;
+}
+
+#mobile-message {
+  display: none;
+}
+
+#mobile-message.mobile {
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+}
+
+#mobile-message.mobile p {
+  display: block;
+  font-size: 30px;
+  background-color: lightgrey;
+  position: relative;
+  top: 17em;
+  width: 85%;
+  padding: 1em;
+  left: 1em;
+  opacity: 1;
+  font-size: 40px;
+}
+
+@media screen and (max-device-width: 470px) {
+  #container {
+    margin-top: 25em;
+  }
+
+  h1 {
+    font-size: 150px;
+  }
+
+  #buttons {
+    width: 100%;
+  }
+
+  #quit,
+  #button,
+  #arrow-up,
+  #arrow-down {
+    width: 100%;
+    height: 100%;
+    line-height: 8em;
+  }
+
+  #button,
+  #arrow-up,
+  #arrow-down {
+    font-size: 16px;
+  }
+
+  #quit span {
+    font-size: 17px;
+  }
+
+  #mobile-message {
+    display: block;
+  }
+
+  #mobile-message.mobile {
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+  }
+
+  #mobile-message.mobile p {
+    display: block;
+    font-size: 30px;
+    background-color: lightgrey;
+    position: relative;
+    top: 17em;
+    width: 85%;
+    padding: 1em;
+    left: 1em;
+    opacity: 1;
+    font-size: 40px;
+  }
+}
