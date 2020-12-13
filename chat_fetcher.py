@@ -26,14 +26,16 @@ class ChatFetcher:
 
             try:
                 text = c.message
-                lang = detect(text)
-                translator = Translator()
-                trans_result = translator.translate(text, dest='de', src=lang)
-                print(trans_result.text)
+                # lang = detect(text)
+                # print(lang)
+                # translator = Translator()
+                # trans_result = translator.translate(text, dest='de', src=lang)
+                # print(trans_result.text)
+
                 msg = {
                     'datetime': c.datetime,
                     'author': c.author.name,
-                    'message': trans_result.text
+                    'message': text
                 }
 
             except BaseException as error:
